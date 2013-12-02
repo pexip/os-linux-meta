@@ -2,117 +2,22 @@ Package: linux-headers-generic-pae
 Architecture: i386
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-generic-pae
-Description: Generic Linux kernel headers
- This package will always depend on the latest generic kernel headers
- available.
+Depends: ${misc:Depends}, linux-headers-generic (= ${binary:Version})
+Description: Transitional package
+ This package will always depend on linux-headers-generic
 
 Package: linux-image-generic-pae
 Architecture: i386
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-generic-pae, linux-firmware
-Description: Generic Linux kernel image
- This package will always depend on the latest generic kernel image
- available.
+Depends: ${misc:Depends}, linux-image-generic (= ${binary:Version})
+Description: Transitional package
+ This package will always depend on linux-image-generic
 
 Package: linux-generic-pae
 Architecture: i386
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, linux-image-generic-pae (= ${binary:Version}), linux-headers-generic-pae (= ${binary:Version})
-Description: Complete Generic Linux kernel
- This package will always depend on the latest complete generic Linux kernel
- available.
-
-Package: linux-backports-modules-headers-RELEASE_NAME-generic-pae
-Architecture: i386
-Depends: ${misc:Depends}, linux-headers-lbm-${kernel-abi-version}-generic-pae
-Description: Backported driver headers for generic-pae kernel image
- This empty package allows people to keep their backported module
- headers up-to-date when upgrading their Linux kernel.
-
-Package: linux-backports-modules-cw-3.3-RELEASE_NAME-generic-pae
-Architecture: i386
-Depends: ${misc:Depends}, linux-backports-modules-cw-3.3-${kernel-abi-version}-generic-pae
-Description: Backported wireless drivers for generic-pae kernel image
- This empty package allows people to keep their backported wireless modules
- up-to-date when upgrading their Linux kernel.
-
-Package: linux-backports-modules-cw-3.4-RELEASE_NAME-generic-pae
-Architecture: i386
-Depends: ${misc:Depends}, linux-backports-modules-cw-3.4-${kernel-abi-version}-generic-pae
-Description: Backported wireless drivers for generic-pae kernel image
- This empty package allows people to keep their backported wireless modules
- up-to-date when upgrading their Linux kernel.
-
-Package: linux-backports-modules-cw-3.5-RELEASE_NAME-generic-pae
-Architecture: i386
-Depends: ${misc:Depends}, linux-backports-modules-cw-3.5-${kernel-abi-version}-generic-pae
-Description: Backported wireless drivers for generic-pae kernel image
- This empty package allows people to keep their backported wireless modules
- up-to-date when upgrading their Linux kernel.
-
-Package: linux-backports-modules-cw-3.6-RELEASE_NAME-generic-pae
-Architecture: i386
-Depends: ${misc:Depends}, linux-backports-modules-cw-3.6-${kernel-abi-version}-generic-pae
-Description: Backported wireless drivers for generic-pae kernel image
- This empty package allows people to keep their backported wireless modules
- up-to-date when upgrading their Linux kernel.
-
-Package: linux-backports-modules-cw-3.7-RELEASE_NAME-generic-pae
-Architecture: i386
-Depends: ${misc:Depends}, linux-backports-modules-cw-3.7-${kernel-abi-version}-generic-pae
-Description: Backported wireless drivers for generic-pae kernel image
- This empty package allows people to keep their backported wireless modules
- up-to-date when upgrading their Linux kernel.
-
-Package: linux-backports-modules-cw-3.8-RELEASE_NAME-generic-pae
-Architecture: i386
-Depends: ${misc:Depends}, linux-backports-modules-cw-3.8-${kernel-abi-version}-generic-pae
-Description: Backported wireless drivers for generic-pae kernel image
- This empty package allows people to keep their backported wireless modules
- up-to-date when upgrading their Linux kernel.
-
-Package: linux-backports-modules-cw-3.10-RELEASE_NAME-generic-pae
-Architecture: i386
-Depends: ${misc:Depends}, linux-backports-modules-cw-3.10-${kernel-abi-version}-generic-pae
-Description: Backported wireless drivers for generic-pae kernel image
- This empty package allows people to keep their backported wireless modules
- up-to-date when upgrading their Linux kernel.
-
-Package: linux-backports-modules-cw-3.11-RELEASE_NAME-generic-pae
-Architecture: i386
-Depends: ${misc:Depends}, linux-backports-modules-cw-3.11-${kernel-abi-version}-generic-pae
-Description: Backported wireless drivers for generic-pae kernel image
- This empty package allows people to keep their backported wireless modules
- up-to-date when upgrading their Linux kernel.
-
-Package: linux-backports-modules-cw-3.12-RELEASE_NAME-generic-pae
-Architecture: i386
-Depends: ${misc:Depends}, linux-backports-modules-cw-3.12-${kernel-abi-version}-generic-pae
-Description: Backported wireless drivers for generic-pae kernel image
- This empty package allows people to keep their backported wireless modules
- up-to-date when upgrading their Linux kernel.
-
-Package: linux-backports-modules-net-RELEASE_NAME-generic-pae
-Architecture: i386
-Depends: ${misc:Depends}, linux-backports-modules-net-${kernel-abi-version}-generic-pae
-Description: Backported ethernet drivers for generic kernel image.
- This empty package allows people to keep their backported ethernet modules
- up-to-date when upgrading their Linux kernel.
-
-#Package: linux-backports-modules-alsa-RELEASE_NAME-generic-pae
-#Architecture: i386
-#Depends: ${misc:Depends}, linux-backports-modules-alsa-${kernel-abi-version}-generic-pae
-#Description: Backported drivers for alsa-driver snapshot.
-# This empty package allows people to keep their alsa-driver snapshot
-# up-to-date when upgrading their Linux kernel.
-#
-
-Package: linux-backports-modules-hv-RELEASE_NAME-generic-pae
-Architecture: i386
-Depends: ${misc:Depends}, linux-backports-modules-hv-${kernel-abi-version}-generic-pae
-Description: Backported Hyper-V hypervisor interfaces
- This empty package allows people to keep their Hyper-V updated drivers
- up-to-date when upgrading their Linux kernel.
+Depends: ${misc:Depends}, linux-generic (= ${binary:Version})
+Description: Transitional package.
+ This package will always depend on linux-generic.

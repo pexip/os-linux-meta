@@ -2,25 +2,25 @@ Package: linux-headers-highbank
 Architecture: armhf
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-highbank 
-Description: Linux kernel headers for the Calxeda Highbank flavour.
- This package will always depend on the latest kernel headers available
- for Calxeda Highbank systems.
+Depends: ${misc:Depends}, linux-headers-generic (= ${binary:Version})
+Description: Linux kernel headers for the armhf architecture.
+ This is a transitional package for upgrade paths. You should
+ be using linux-headers-generic.
 
 Package: linux-image-highbank
 Architecture: armhf
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-highbank, linux-firmware
-Description: Linux kernel image for the Calxeda Highbank flavour.
- This package will always depend on the latest kernel image available
- for Calxeda Highbank systems.
+Depends: ${misc:Depends}, linux-image-generic (= ${binary:Version})
+Description: Linux kernel image for the armhf architecture.
+ This is a transitional package for upgrade paths. You should
+ be using linux-image-generic.
 
 Package: linux-highbank
 Architecture: armhf
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, linux-image-highbank (= ${binary:Version}), linux-headers-highbank (= ${binary:Version})
-Description: Complete Linux kernel for the Calxeda Highbank architecture.
- This package will always depend on the latest complete Linux kernel available
- for Calxeda Highbank systems.
+Depends: ${misc:Depends}, linux-generic (= ${binary:Version})
+Description: Complete Linux kernel and headers for the armhf architecture.
+ This is a transitional package for upgrade paths. You should
+ be using linux-generic.
