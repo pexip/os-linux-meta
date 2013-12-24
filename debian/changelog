@@ -1,3 +1,9 @@
+linux-meta (3.2.0.57.68pexip1) pexip; urgency=low
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 24 Dec 2013 23:31:49 +0000
+
 linux-meta (3.2.0.57.68) precise; urgency=low
 
   * UBUNTU: Add v3.10 compat-wireless meta package
