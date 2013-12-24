@@ -1,0 +1,595 @@
+Source: linux-meta
+Section: devel
+Priority: optional
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Standards-Version: 3.6.1
+Build-Depends: dpkg (>= 1.13.19), debhelper (>= 5), gawk
+Vcs-Git: http://kernel.ubuntu.com/git-repos/ubuntu/ubuntu-precise-meta.git
+
+Package: linux
+Architecture: i386 amd64 
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image (= ${binary:Version})
+Description: Generic complete Linux kernel.
+ This package will always depend on the latest generic complete Linux kernel
+ available.
+
+Package: linux-source
+Architecture: all
+Section: devel
+Priority: optional
+Depends: ${misc:Depends}, linux-source-${kernel-version}
+Description: Linux kernel source with Ubuntu patches
+ This package will always depend on the latest Linux kernel source code
+ available. The Ubuntu patches have been applied.
+
+Package: linux-image
+Architecture: i386 amd64 
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-${generic-depends} (= ${binary:Version})
+Description: Generic Linux kernel image.
+ This package will always depend on the latest generic Linux kernel image
+ available.
+
+Package: linux-crashdump
+Architecture: i386 amd64
+Section: devel
+Depends: ${misc:Depends}, kexec-tools, makedumpfile, grub-pc (>= 1.96+20090611-1ubuntu2) | grub-efi-ia32 | grub-efi-amd64 | grub (>= 0.97-29ubuntu24)
+Recommends: apport
+Suggests: crash
+Description: Linux kernel crashdump setup for the latest generic kernel
+ This package installs all the needed infrstracture to get crashdumps from
+ your running system. If you are experiencing kernel crashes that cannot
+ be debugged normally (because the problem is infrequent or panic's the
+ system in such a way as to make information gathering impossible), then
+ you can install this package to automatically enable capture of the
+ vmcore on crashes.
+
+Package: linux-tools
+Architecture: i386 amd64 armel armhf
+Section: kernel
+Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}
+Description: Linux kernel versioned Tools
+ This package will always depend on the latest Linux kernel versioned tools 
+ available. The Ubuntu patches have been applied.
+
+#
+# This comment applies to the following 4 meta packages.
+#
+# Point to a 12.04 kernel until such time as 12.10 is released. Then update
+# to point to linux-image-generic-lts-backport-quantal. The -hwe- package
+# is not updated until just before a point release. However, the -current-
+# package always tracks the most recent release. In that way, -hwe- will
+# sometimes lag for a few months before being updated to match -current-.
+#
+Package: linux-image-hwe-generic
+Architecture: i386 amd64 
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-generic-lts-quantal
+Description: Depends on the generic hardware enablement kernel image and headers.
+ This package will always depend on the generic hardware enablement kernel
+ and headers.
+
+Package: linux-hwe-generic
+Architecture: i386 amd64 
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-hwe-generic, linux-headers-generic-lts-quantal
+Description: Depends on the generic hardware enablement kernel image and headers.
+ This package will always depend on the generic hardware enablement kernel
+ and headers.
+
+Package: linux-image-current-generic
+Architecture: i386 amd64 
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-generic-lts-raring
+Description: Depends on the most recently released generic kernel image and headers.
+ This package will always depend on the latest released generic kernel
+ and headers, up to 14.04 inclusive.
+
+Package: linux-current-generic
+Architecture: i386 amd64 
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-generic-lts-raring, linux-headers-generic-lts-raring
+Description: Depends on the most recently released generic kernel image and headers.
+ This package will always depend on the latest released generic kernel
+ and headers, up to 14.04 inclusive.
+
+
+Package: linux-headers-generic
+Architecture: i386 amd64
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-generic
+Description: Generic Linux kernel headers
+ This package will always depend on the latest generic kernel headers
+ available.
+
+Package: linux-image-generic
+Architecture: i386 amd64
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-generic, linux-firmware
+Description: Generic Linux kernel image
+ This package will always depend on the latest generic kernel image
+ available.
+
+Package: linux-generic
+Architecture: i386 amd64
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-generic (= ${binary:Version}), linux-headers-generic (= ${binary:Version})
+Description: Complete Generic Linux kernel
+ This package will always depend on the latest complete generic Linux kernel
+ available.
+
+Package: linux-backports-modules-headers-precise-generic
+Architecture: amd64 i386
+Depends: ${misc:Depends}, linux-headers-lbm-${kernel-abi-version}-generic
+Description: Backported driver headers for generic kernel image
+ This empty package allows people to keep their backported module
+ headers up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.3-precise-generic
+Architecture: amd64 i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.3-${kernel-abi-version}-generic
+Description: Backported wireless drivers for generic kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.4-precise-generic
+Architecture: amd64 i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.4-${kernel-abi-version}-generic
+Description: Backported wireless drivers for generic kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.5-precise-generic
+Architecture: amd64 i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.5-${kernel-abi-version}-generic
+Description: Backported wireless drivers for generic kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.6-precise-generic
+Architecture: amd64 i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.6-${kernel-abi-version}-generic
+Description: Backported wireless drivers for generic kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.7-precise-generic
+Architecture: amd64 i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.7-${kernel-abi-version}-generic
+Description: Backported wireless drivers for generic kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.8-precise-generic
+Architecture: amd64 i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.8-${kernel-abi-version}-generic
+Description: Backported wireless drivers for generic kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.10-precise-generic
+Architecture: amd64 i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.10-${kernel-abi-version}-generic
+Description: Backported wireless drivers for generic kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.11-precise-generic
+Architecture: amd64 i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.11-${kernel-abi-version}-generic
+Description: Backported wireless drivers for generic kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.12-precise-generic
+Architecture: amd64 i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.12-${kernel-abi-version}-generic
+Description: Backported wireless drivers for generic kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-net-precise-generic
+Architecture: amd64 i386
+Depends: ${misc:Depends}, linux-backports-modules-net-${kernel-abi-version}-generic
+Description: Backported ethernet drivers for generic kernel image.
+ This empty package allows people to keep their backported ethernet modules
+ up-to-date when upgrading their Linux kernel.
+
+#Package: linux-backports-modules-alsa-precise-generic
+#Architecture: amd64 i386
+#Depends: ${misc:Depends}, linux-backports-modules-alsa-${kernel-abi-version}-generic
+#Description: Backported drivers for alsa-driver snapshot.
+# This empty package allows people to keep their alsa-driver snapshot
+# up-to-date when upgrading their Linux kernel.
+#
+
+Package: linux-backports-modules-hv-precise-generic
+Architecture: amd64 i386
+Depends: ${misc:Depends}, linux-backports-modules-hv-${kernel-abi-version}-generic
+Description: Backported Hyper-V hypervisor interfaces
+ This empty package allows people to keep their Hyper-V updated drivers
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-headers-generic-pae
+Architecture: i386
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-generic-pae
+Description: Generic Linux kernel headers
+ This package will always depend on the latest generic kernel headers
+ available.
+
+Package: linux-image-generic-pae
+Architecture: i386
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-generic-pae, linux-firmware
+Description: Generic Linux kernel image
+ This package will always depend on the latest generic kernel image
+ available.
+
+Package: linux-generic-pae
+Architecture: i386
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-generic-pae (= ${binary:Version}), linux-headers-generic-pae (= ${binary:Version})
+Description: Complete Generic Linux kernel
+ This package will always depend on the latest complete generic Linux kernel
+ available.
+
+Package: linux-backports-modules-headers-precise-generic-pae
+Architecture: i386
+Depends: ${misc:Depends}, linux-headers-lbm-${kernel-abi-version}-generic-pae
+Description: Backported driver headers for generic-pae kernel image
+ This empty package allows people to keep their backported module
+ headers up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.3-precise-generic-pae
+Architecture: i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.3-${kernel-abi-version}-generic-pae
+Description: Backported wireless drivers for generic-pae kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.4-precise-generic-pae
+Architecture: i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.4-${kernel-abi-version}-generic-pae
+Description: Backported wireless drivers for generic-pae kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.5-precise-generic-pae
+Architecture: i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.5-${kernel-abi-version}-generic-pae
+Description: Backported wireless drivers for generic-pae kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.6-precise-generic-pae
+Architecture: i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.6-${kernel-abi-version}-generic-pae
+Description: Backported wireless drivers for generic-pae kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.7-precise-generic-pae
+Architecture: i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.7-${kernel-abi-version}-generic-pae
+Description: Backported wireless drivers for generic-pae kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.8-precise-generic-pae
+Architecture: i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.8-${kernel-abi-version}-generic-pae
+Description: Backported wireless drivers for generic-pae kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.10-precise-generic-pae
+Architecture: i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.10-${kernel-abi-version}-generic-pae
+Description: Backported wireless drivers for generic-pae kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.11-precise-generic-pae
+Architecture: i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.11-${kernel-abi-version}-generic-pae
+Description: Backported wireless drivers for generic-pae kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-cw-3.12-precise-generic-pae
+Architecture: i386
+Depends: ${misc:Depends}, linux-backports-modules-cw-3.12-${kernel-abi-version}-generic-pae
+Description: Backported wireless drivers for generic-pae kernel image
+ This empty package allows people to keep their backported wireless modules
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-backports-modules-net-precise-generic-pae
+Architecture: i386
+Depends: ${misc:Depends}, linux-backports-modules-net-${kernel-abi-version}-generic-pae
+Description: Backported ethernet drivers for generic kernel image.
+ This empty package allows people to keep their backported ethernet modules
+ up-to-date when upgrading their Linux kernel.
+
+#Package: linux-backports-modules-alsa-precise-generic-pae
+#Architecture: i386
+#Depends: ${misc:Depends}, linux-backports-modules-alsa-${kernel-abi-version}-generic-pae
+#Description: Backported drivers for alsa-driver snapshot.
+# This empty package allows people to keep their alsa-driver snapshot
+# up-to-date when upgrading their Linux kernel.
+#
+
+Package: linux-backports-modules-hv-precise-generic-pae
+Architecture: i386
+Depends: ${misc:Depends}, linux-backports-modules-hv-${kernel-abi-version}-generic-pae
+Description: Backported Hyper-V hypervisor interfaces
+ This empty package allows people to keep their Hyper-V updated drivers
+ up-to-date when upgrading their Linux kernel.
+
+Package: linux-headers-highbank
+Architecture: armhf
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-highbank 
+Description: Linux kernel headers for the Calxeda Highbank flavour.
+ This package will always depend on the latest kernel headers available
+ for Calxeda Highbank systems.
+
+Package: linux-image-highbank
+Architecture: armhf
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-highbank, linux-firmware
+Description: Linux kernel image for the Calxeda Highbank flavour.
+ This package will always depend on the latest kernel image available
+ for Calxeda Highbank systems.
+
+Package: linux-highbank
+Architecture: armhf
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-highbank (= ${binary:Version}), linux-headers-highbank (= ${binary:Version})
+Description: Complete Linux kernel for the Calxeda Highbank architecture.
+ This package will always depend on the latest complete Linux kernel available
+ for Calxeda Highbank systems.
+
+Package: linux-headers-omap
+Architecture: armel armhf
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-omap 
+Description: Linux kernel headers for the OMAP3 architecture.
+ This package will always depend on the latest kernel headers available
+ for ARM TI OMAP3 systems.
+
+Package: linux-image-omap
+Architecture: armel armhf
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-omap, linux-firmware
+Description: Linux kernel image for the OMAP3 architecture.
+ This package will always depend on the latest kernel image available
+ for ARM TI OMAP3 systems.
+
+Package: linux-omap
+Architecture: armel armhf
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-omap (= ${binary:Version}), linux-headers-omap (= ${binary:Version})
+Description: Complete Linux kernel for the OMAP3 architecture.
+ This package will always depend on the latest complete Linux kernel available
+ for ARM TI OMAP3 systems.
+
+#
+# PowerPC
+#
+Package: linux-powerpc
+Architecture: powerpc
+Section: kernel
+Priority: optional
+Depends: linux-powerpc-smp (= ${binary:Version})
+Description: Complete Linux kernel on PowerPC.
+ This package will always depend on the latest complete Linux kernel available
+ for PowerPC.
+
+Package: linux-image-powerpc
+Architecture: powerpc
+Section: kernel
+Priority: optional
+Depends: linux-image-powerpc-smp (= ${binary:Version}), linux-firmware
+Description: Linux kernel image on PowerPC
+ This package will always depend on the latest kernel image available
+ for PowerPC support.
+
+Package: linux-headers-powerpc
+Architecture: powerpc
+Section: kernel
+Priority: optional
+Depends: linux-headers-powerpc-smp (= ${binary:Version})
+Description: Linux kernel headers on PowerPC
+ This package will always depend on the latest kernel headers available
+ for PowerPC.
+
+
+#
+# PowerPC-SMP
+#
+Package: linux-powerpc-smp
+Architecture: powerpc
+Section: kernel
+Priority: optional
+Depends: linux-image-powerpc-smp (= ${binary:Version}), linux-headers-powerpc-smp (= ${binary:Version})
+Description: Complete Linux kernel on PowerPC SMP.
+ This package will always depend on the latest complete Linux kernel available
+ for PowerPC with SMP support.
+ SMP (symmetric multi-processing) is needed if you have multiple processors.
+
+Package: linux-image-powerpc-smp
+Architecture: powerpc
+Section: kernel
+Priority: optional
+Depends: linux-image-${kernel-abi-version}-powerpc-smp, linux-firmware
+Description: Linux kernel image on PowerPC SMP.
+ This package will always depend on the latest kernel image available
+ for PowerPC with SMP support.
+ SMP (symmetric multi-processing) is needed if you have multiple processors.
+
+Package: linux-headers-powerpc-smp
+Architecture: powerpc
+Section: kernel
+Priority: optional
+Depends: linux-headers-${kernel-abi-version}-powerpc-smp
+Description: Linux kernel headers on PowerPC SMP
+ This package will always depend on the latest kernel headers available
+ for PowerPC with SMP support.
+ SMP (symmetric multi-processing) is needed if you have multiple processors.
+
+
+#
+# PowerPC64-SMP
+#
+Package: linux-powerpc64-smp
+Architecture: powerpc
+Section: kernel
+Priority: optional
+Depends: linux-image-powerpc64-smp (= ${binary:Version}), linux-headers-powerpc64-smp (= ${binary:Version})
+Description: Complete Linux kernel on PowerPC64 SMP.
+ This package will always depend on the latest complete Linux kernel available
+ for PowerPC64 with SMP support.
+ SMP (symmetric multi-processing) is needed if you have multiple processors.
+
+Package: linux-image-powerpc64-smp
+Architecture: powerpc
+Section: kernel
+Priority: optional
+Depends: linux-image-${kernel-abi-version}-powerpc64-smp, linux-firmware
+Description: Linux kernel image on PowerPC64 SMP.
+ This package will always depend on the latest kernel image available
+ for PowerPC64 with SMP support.
+ SMP (symmetric multi-processing) is needed if you have multiple processors.
+
+Package: linux-headers-powerpc64-smp
+Architecture: powerpc
+Section: kernel
+Priority: optional
+Depends: linux-headers-${kernel-abi-version}-powerpc64-smp
+Description: Linux kernel headers on PowerPC64 SMP
+ This package will always depend on the latest kernel headers available
+ for PowerPC64 with SMP support.
+ SMP (symmetric multi-processing) is needed if you have multiple processors.
+
+
+Package: linux-headers-server
+Architecture: amd64 i386
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-generic [amd64], linux-headers-generic-pae [i386]
+Description: Linux kernel headers on Server Equipment.
+ This package will always depend on the latest kernel headers available
+ for Server Equipment.
+
+Package: linux-image-server
+Architecture: amd64 i386
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-generic [amd64], linux-firmware [amd64], linux-image-generic-pae [i386]
+Description: Linux kernel image on Server Equipment.
+ This package will always depend on the latest kernel image available
+ for Server Equipment.
+
+Package: linux-server
+Architecture: amd64 i386
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-server (= ${binary:Version}) [amd64], linux-headers-server (= ${binary:Version}) [amd64], linux-generic-pae [i386]
+Description: Complete Linux kernel on Server Equipment.
+ This package will always depend on the latest complete Linux kernel available
+ for Server Equipment.
+
+Package: linux-backports-modules-net-precise-server
+Architecture: amd64 i386
+Depends: ${misc:Depends}, linux-backports-modules-net-${kernel-abi-version}-generic [amd64], linux-backports-modules-net-${kernel-abi-version}-generic-pae [i386]
+Description: Backported ethernet drivers for generic kernel image.
+ This empty package allows people to keep their backported ethernet modules
+ up-to-date when upgrading their Linux kernel.
+
+#Package: linux-backports-modules-headers-precise-server
+#Architecture: amd64
+#Depends: ${misc:Depends}, linux-headers-lbm-${kernel-abi-version}-generic
+#Description: Backported driver headers for server kernel image
+# This empty package allows people to keep their backported module
+# headers up-to-date when upgrading their Linux kernel.
+
+#Package: linux-backports-modules-cw-3.3-precise-server
+#Architecture: amd64
+#Depends: ${misc:Depends}, linux-backports-modules-cw-3.3-${kernel-abi-version}-server
+#Description: Backported wireless drivers for server kernel image
+# This empty package allows people to keep their backported wireless modules
+# up-to-date when upgrading their Linux kernel.
+#
+#Package: linux-backports-modules-alsa-precise-server
+#Architecture: amd64
+#Depends: ${misc:Depends}, linux-backports-modules-alsa-${kernel-abi-version}-generic
+#Description: Backported drivers for alsa-driver snapshot.
+# This empty package allows people to keep their alsa-driver snapshot
+# up-to-date when upgrading their Linux kernel.
+#
+
+Package: linux-headers-virtual
+Architecture: i386 amd64
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-virtual
+Description: Linux kernel headers for virtual machines
+ This package will always depend on the latest kernel headers available
+ for virtual machines.
+
+Package: linux-image-virtual
+Architecture: i386 amd64
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-virtual, linux-firmware
+Description: Linux kernel image for virtual machines
+ This package will always depend on the latest kernel image available
+ for virtual machines. Install linux-image-extra-virtual to get all
+ available kernel modules.
+
+Package: linux-virtual
+Architecture: i386 amd64
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-virtual (= ${binary:Version}), linux-headers-virtual (= ${binary:Version})
+Description: Complete Linux kernel for virtual machines
+ This package will always depend on the latest complete Linux kernel available
+ for virtual machines. Install linux-image-extra-virtual to get all
+ available kernel modules.
+
+Package: linux-image-extra-virtual
+Architecture: i386 amd64
+Section: kernel
+Priority: optional
+Depends: ${misc:Depends}, linux-image-virtual (= ${binary:Version}), linux-image-extra-${kernel-abi-version}-virtual
+Description: Linux kernel extra modules for virtual machines
+ This package will always depend on the latest kernel extra modules available
+ for virtual machines.
+
+Package: linux-backports-modules-hv-precise-virtual
+Architecture: amd64 i386
+Depends: ${misc:Depends}, linux-backports-modules-hv-${kernel-abi-version}-virtual
+Description: Backported Hyper-V hypervisor interfaces
+ This empty package allows people to keep their Hyper-V updated drivers
+ up-to-date when upgrading their Linux kernel.
+
