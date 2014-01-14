@@ -7,7 +7,7 @@
 # Copyright (c) 2004 Jens Schmalzing <jensen@debian.org>
 #
 
-RELEASE_NAME=precise
+RELEASE_NAME=saucy
 
 # 5 digit versions (2.6.38.<abi>.<upload>, 3 digit kernel base versions (2.6.38)
 KERNEL_VERSION=$(shell dpkg-parsechangelog | grep ^Version | sed -e \
@@ -21,8 +21,9 @@ KERNEL_ABI=$(shell head -n1 < debian/changelog | gawk '{n=split($$0,v,"."); prin
 
 KERNEL_ABI_VERSION=$(KERNEL_VERSION)-$(KERNEL_ABI)
 
-GENERIC_i386=generic-pae
+GENERIC_i386=generic
 GENERIC_amd64=generic
+GENERIC_armhf=generic
 
 GENERIC=$(value GENERIC_$(shell dpkg-architecture -qDEB_HOST_ARCH))
 GENERIC_DEP=$(if $(GENERIC),$(GENERIC),)

@@ -1,368 +1,610 @@
-linux-meta (3.2.0.57.68pexip1) pexip; urgency=low
+linux-meta (3.11.0.15.16pexip1) pexip; urgency=low
 
   * Prepare Pexip packaging
 
- -- John-Mark Bell <jmb@pexip.com>  Tue, 24 Dec 2013 23:31:49 +0000
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 14 Jan 2014 01:46:24 +0000
 
-linux-meta (3.2.0.57.68) precise; urgency=low
+linux-meta (3.11.0.15.16) saucy; urgency=low
 
-  * UBUNTU: Add v3.10 compat-wireless meta package
-    UBUNTU: Add v3.11 compat-wireless meta package
-    UBUNTU: Add v3.12 compat-wireless meta package
-    -LP: #1246465
+  * linux ABI 3.11.0-15
 
- -- Tim Gardner <tim.gardner@canonical.com>  Thu, 14 Nov 2013 11:31:54 -0700
+ -- Brad Figg <brad.figg@canonical.com>  Mon, 02 Dec 2013 15:30:02 -0800
 
-linux-meta (3.2.0.57.67) precise; urgency=low
+linux-meta (3.11.0.14.15) saucy; urgency=low
 
-  [ Steve Conklin ]
+  * linux ABI 3.11.0-14
 
-  * Bump ABI
+ -- Brad Figg <brad.figg@canonical.com>  Tue, 12 Nov 2013 08:45:23 -0800
 
- -- Steve Conklin <sconklin@canonical.com>  Tue, 12 Nov 2013 15:35:57 -0600
+linux-meta (3.11.0.13.14) saucy; urgency=low
 
-linux-meta (3.2.0.56.66) precise; urgency=low
+  * linux ABI 3.11.0-13
 
-  [ Steve Conklin ]
+ -- Brad Figg <brad.figg@canonical.com>  Mon, 21 Oct 2013 11:21:42 -0700
 
-  * Bump ABI
+linux-meta (3.11.0.12.13) saucy; urgency=low
 
- -- Steve Conklin <sconklin@canonical.com>  Thu, 12 Oct 2013 17:09:21 -0500
+  * linux ABI 3.11.0-12
 
-linux-meta (3.2.0.55.65) precise; urgency=low
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 08 Oct 2013 14:35:16 -0600
 
-  [ Steve Conklin ]
+linux-meta (3.11.0.11.12) saucy; urgency=low
 
-  * Bump ABI
+  * linux ABI 3.11.0-11
 
- -- Steve Conklin <sconklin@canonical.com>  Thu, 01 Oct 2013 10:09:02 -0500
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 01 Oct 2013 13:28:22 -0600
 
-linux-meta (3.2.0.54.64) precise; urgency=low
+linux-meta (3.11.0.9.11) saucy; urgency=low
 
-  [ Steve Conklin ]
+  * linux ABI 3.11.0-9
 
-  * Bump ABI
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 27 Sep 2013 08:51:38 -0600
 
- -- Steve Conklin <sconklin@canonical.com>  Thu, 10 Sep 2013 15:00:15 -0500
+linux-meta (3.11.0.8.10) saucy; urgency=low
 
-linux-meta (3.2.0.53.63) precise; urgency=low
+  * linux ABI 3.11.0-8
 
-  [ Steve Conklin ]
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 19 Sep 2013 22:06:42 -0600
 
-  * Bump ABI
+linux-meta (3.11.0.7.9) saucy; urgency=low
 
- -- Brad Figg <brad.figg@canonical.com>  Thu, 22 Aug 2013 08:04:58 -0700
+  * Follow changes to linux-tools naming (LP: #1205284).
 
-linux-meta (3.2.0.52.62) precise; urgency=low
+ -- Andy Whitcroft <apw@canonical.com>  Wed, 11 Sep 2013 14:47:01 +0100
 
-  [ Steve Conklin ]
+linux-meta (3.11.0.7.8) saucy; urgency=low
 
-  * Bump ABI
+  * linux ABI 3.11.0-7
 
- -- Steve Conklin <sconklin@canonical.com>  Fri, 26 Jul 2013 11:48:00 -0500
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 10 Sep 2013 14:19:52 -0600
 
-linux-meta (3.2.0.51.61) precise; urgency=low
+linux-meta (3.11.0.6.7) saucy; urgency=low
 
-  [ Brad Figg ]
+  * linux ABI 3.11.0-6
 
-  * Bump ABI
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 09 Sep 2013 09:54:43 -0600
 
- -- Brad Figg <brad.figg@canonical.com>  Thu, 25 Jul 2013 06:37:45 -0700
+linux-meta (3.11.0.5.6) saucy; urgency=low
 
-linux-meta (3.2.0.50.60) precise; urgency=low
+  * linux ABI 3.11.0-5
 
-  [ Brad Figg ]
+ -- Andy Whitcroft <apw@canonical.com>  Wed, 04 Sep 2013 10:59:18 +0100
 
-  * Bump ABI
+linux-meta (3.11.0.4.5) saucy; urgency=low
 
- -- Brad Figg <brad.figg@canonical.com>  Tue, 09 Jul 2013 11:46:39 -0700
+  * linux ABI 3.11.0-4
 
-linux-meta (3.2.0.49.59) precise; urgency=low
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 26 Aug 2013 09:19:50 -0600
 
-  [ Steve Conklin ]
+linux-meta (3.11.0.3.4) saucy; urgency=low
 
-  * Bump ABI
+  * linux ABI 3.11.0-3
 
- -- Steve Conklin <sconklin@canonical.com>  Tue, 18 Jun 2013 12:37:21 -0500
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 19 Aug 2013 14:42:28 +0000
 
-linux-meta (3.2.0.48.58) precise; urgency=low
+linux-meta (3.11.0.2.3) saucy; urgency=low
 
-  [ Steve Conklin ]
+  * linux ABI 3.11.0-2
 
-  * Bump ABI
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 12 Aug 2013 10:11:56 -0600
 
- -- Steve Conklin <sconklin@canonical.com>  Mon, 06 Jun 2013 09:52:01 -0500
+linux-meta (3.11.0.1.2) saucy; urgency=low
 
-linux-meta (3.2.0.47.56) precise; urgency=low
+  * linux ABI 3.11.0-1
 
-  [ Steve Conklin ]
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 08 Aug 2013 20:29:01 -0600
 
-  * Bump ABI
+linux-meta (3.11.0.0.1) saucy; urgency=low
 
- -- Steve Conklin <sconklin@canonical.com>  Mon, 03 Jun 2013 12:48:17 -0500
+  * linux ABI 3.11.0-0
 
-linux-meta (3.2.0.46.55) precise; urgency=low
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 08 Aug 2013 07:47:13 -0600
 
-  [ Steve Conklin ]
+linux-meta (3.10.0.6.15) saucy; urgency=low
 
-  * Bump ABI
+  * linux ABI 3.10.0-6
 
- -- Steve Conklin <sconklin@canonical.com>  Fri, 31 May 2013 11:23:49 -0500
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 26 Jul 2013 12:41:31 -0600
 
-linux-meta (3.2.0.45.54) precise; urgency=low
+linux-meta (3.10.0.5.14) saucy; urgency=low
 
-  [ Steve Conklin ]
+  * linux ABI 3.10.0-5
 
-  * Bump ABI
+ -- Andy Whitcroft <apw@canonical.com>  Mon, 22 Jul 2013 16:21:20 +0100
 
- -- Steve Conklin <sconklin@canonical.com>  Wed, 29 May 2013 10:00:59 -0500
+linux-meta (3.10.0.4.13) saucy; urgency=low
 
-linux-meta (3.2.0.44.53) precise; urgency=low
+  * linux ABI 3.10.0-4
 
-  * UBUNTU: Update *current* to reference Raring
-    -LP: #1180930
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 18 Jul 2013 13:18:37 -0600
 
- -- Tim Gardner <tim.gardner@canonical.com>  Thu, 16 May 2013 14:06:24 -0600
+linux-meta (3.10.0.3.12) saucy; urgency=low
 
-linux-meta (3.2.0.44.52) precise-proposed; urgency=low
+  * linux ABI 3.10.0-3
 
-  [ Brad Figg ]
+ -- Andy Whitcroft <apw@canonical.com>  Mon, 15 Jul 2013 17:47:41 +0100
 
-  * Bump ABI
+linux-meta (3.10.0.2.11) saucy; urgency=low
 
- -- Brad Figg <brad.figg@canonical.com>  Thu, 16 May 2013 09:42:10 -0700
+  * linux ABI 3.10.0-2
 
-linux-meta (3.2.0.43.51) precise-proposed; urgency=low
+ -- Andy Whitcroft <apw@canonical.com>  Mon, 01 Jul 2013 19:34:13 +0100
 
-  [ Steve Conklin ]
+linux-meta (3.10.0.1.10) saucy; urgency=low
 
-  * Bump ABI
+  * linux ABI 3.10.0-1
 
- -- Steve Conklin <sconklin@canonical.com>  Mon, 14 May 2013 21:45:58 -0500
+ -- Andy Whitcroft <apw@canonical.com>  Fri, 28 Jun 2013 14:55:04 +0100
 
-linux-meta (3.2.0.42.50) precise-proposed; urgency=low
+linux-meta (3.10.0.0.9) saucy; urgency=low
 
-  [ Brad Figg ]
+  * linux ABI 3.10.0-0
 
-  * Bump ABI
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 24 Jun 2013 13:34:57 -0600
 
- -- Brad Figg <brad.figg@canonical.com>  Mon, 06 May 2013 14:09:22 -0700
+linux-meta (3.9.0.7.8) saucy; urgency=low
 
-linux-meta (3.2.0.41.49) precise-proposed; urgency=low
+  * linux ABI 3.9.0-7
 
-  [ Steve Conklin ]
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 21 Jun 2013 06:21:25 -0600
 
-  * Bump ABI
+linux-meta (3.9.0.6.7) saucy; urgency=low
 
- -- Steve Conklin <sconklin@canonical.com>  Wed, 10 Apr 2013 15:06:35 -0500
+  * linux ABI 3.9.0-6
 
-linux-meta (3.2.0.40.48) precise-proposed; urgency=low
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 14 Jun 2013 09:44:21 -0600
 
-  [ Steve Conklin ]
+linux-meta (3.9.0.5.6) saucy; urgency=low
 
-  * Bump ABI
+  * linux ABI 3.9.0-5
 
- -- Steve Conklin <sconklin@canonical.com>  Wed, 20 Mar 2013 17:27:27 -0800
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 11 Jun 2013 08:37:33 -0600
 
-linux-meta (3.2.0.39.47) precise-proposed; urgency=low
+linux-meta (3.9.0.4.5) saucy; urgency=low
 
-  [ Brad Figg ]
+  * linux ABI 3.9.0-4
 
-  * Bump ABI
+ -- Andy Whitcroft <apw@canonical.com>  Wed, 05 Jun 2013 15:48:54 +0100
 
- -- Brad Figg <brad.figg@canonical.com>  Wed, 27 Feb 2013 07:21:55 -0800
+linux-meta (3.9.0.3.4) saucy; urgency=low
 
-linux-meta (3.2.0.38.46) precise-proposed; urgency=low
+  * linux ABI 3.9.0-3
 
-  [ Luis Henriques ]
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 28 May 2013 12:33:40 -0600
 
-  * Bump ABI
+linux-meta (3.9.0.2.3) saucy; urgency=low
 
- -- Luis Henriques <luis.henriques@canonical.com>  Tue, 05 Feb 2013 13:37:35 +0000
+  * linux ABI 3.9.0-2
 
-linux-meta (3.2.0.37.45) precise; urgency=low
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 14 May 2013 10:51:11 -0600
 
-  * Remove amd64 linux-backports-modules-hv-precise-generic-pae package.
+linux-meta (3.9.0.1.2) saucy; urgency=low
 
- -- Adam Conrad <adconrad@ubuntu.com>  Sat, 02 Feb 2013 06:13:27 -0700
+  * linux ABI 3.9.0-1
 
-linux-meta (3.2.0.37.44) precise-proposed; urgency=low
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 08 May 2013 15:03:02 -0600
 
-  [ Luis Henriques ]
+linux-meta (3.9.0.0.1) saucy; urgency=low
 
-  * Bump ABI
+  * debian/rules: raring -> saucy name switch0
+  * debian/control.common: move to using RELEASE_NAME for git links.
 
- -- Luis Henriques <luis.henriques@canonical.com>  Thu, 24 Jan 2013 14:09:49 +0000
+ -- Andy Whitcroft <apw@canonical.com>  Fri, 26 Apr 2013 10:12:23 +0100
 
-linux-meta (3.2.0.36.43) precise-proposed; urgency=low
+linux-meta (3.8.0.19.35) raring; urgency=low
 
-  * Add linux-headers-<flavour> to linux-<flavour> to retain headers
-    for dkms et al.  (LP: #960770)
+  * linux ABI 3.8.0-19
 
- -- Andy Whitcroft <apw@canonical.com>  Mon, 14 Jan 2013 19:45:34 +0000
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 17 Apr 2013 12:12:22 -0600
 
-linux-meta (3.2.0.36.42) precise-proposed; urgency=low
+linux-meta (3.8.0.18.34) raring; urgency=low
 
-  [ Brad Figg ]
+  * linux ABI 3.8.0-18
 
-  * Bump ABI
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 11 Apr 2013 13:21:09 -0600
 
- -- Brad Figg <brad.figg@canonical.com>  Thu, 03 Jan 2013 09:42:16 -0800
+linux-meta (3.8.0.17.33) raring; urgency=low
 
-linux-meta (3.2.0.35.41) precise-proposed; urgency=low
+  * Added Highbank transition packages for Quantal -> Raring upgrades.
+    linux-headers-highbank, linux-image-highbank, linux-highbank
+    LP: #1164074 
 
-  [ Brad Figg ]
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 09 Apr 2013 09:01:36 -0600
 
-  * Bump ABI
+linux-meta (3.8.0.17.32) raring; urgency=low
 
- -- Brad Figg <brad.figg@canonical.com>  Wed, 02 Jan 2013 14:58:18 -0800
+  * linux ABI 3.8.0-17
 
-linux-meta (3.2.0.35.40) precise-proposed; urgency=low
+ -- Tim Gardner <tim.gardner@canonical.com>  Sun, 07 Apr 2013 08:35:49 -0600
 
-  [ Brad Figg ]
+linux-meta (3.8.0.16.31) raring; urgency=low
 
-  * UBUNTU: The -hv- driver should be for the same flavour of kernel generic->generic, virtual->virtual, generic-pae->generic-pae
-    - LP: #1089970
+  * linux ABI 3.8.0-16
 
- -- Brad Figg <brad.figg@canonical.com>  Thu, 13 Dec 2012 17:23:44 -0800
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 01 Apr 2013 13:12:35 -0600
 
-linux-meta (3.2.0.35.39) precise-proposed; urgency=low
+linux-meta (3.8.0.15.30) raring; urgency=low
 
-  [ Andy Whitcroft ]
+  * linux ABI 3.8.0-15 
 
-  * Add the linux-backports-modules-hv-precise-virtual for Hyper-V.
-    - LP: #1089970
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 27 Mar 2013 13:17:36 -0600
 
- -- Luis Henriques <luis.henriques@canonical.com>  Thu, 13 Dec 2012 22:09:24 +0000
+linux-meta (3.8.0.14.29) raring; urgency=low
 
-linux-meta (3.2.0.35.38) precise-proposed; urgency=low
+  * Fix linux and linux-image generic dependencies on armhf.
 
-  [ Leann Ogasawara ]
+ -- Adam Conrad <adconrad@ubuntu.com>  Sat, 23 Mar 2013 17:01:38 -0600
 
-  * Move metapackages to Section: kernel
-    - LP: #1074787
+linux-meta (3.8.0.14.28) raring; urgency=low
 
-  [ Luis Henriques ]
+  * linux ABI 3.8.0-14
+  * Rename omap to generic. Leave omap in place as transitional
+    packages.
 
-  * Bump ABI
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 22 Mar 2013 13:31:14 -0600
 
- -- Luis Henriques <luis.henriques@canonical.com>  Tue, 04 Dec 2012 15:34:06 +0000
+linux-meta (3.8.0.13.27) raring; urgency=low
 
-linux-meta (3.2.0.34.37) precise-proposed; urgency=low
+  * linux ABI 3.8.0-13
 
-  [ Luis Henriques ]
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 15 Mar 2013 11:47:52 -0600
 
-  * Bump ABI
+linux-meta (3.8.0.12.26) raring; urgency=low
 
- -- Luis Henriques <luis.henriques@canonical.com>  Wed, 14 Nov 2012 16:02:38 +0000
+  * linux ABI 3.8.0-12
 
-linux-meta (3.2.0.33.36) precise-proposed; urgency=low
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 07 Mar 2013 10:08:50 -0700
+
+linux-meta (3.8.0.11.25) raring; urgency=low
+
+  * linux ABI 3.8.0-11 
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 05 Mar 2013 13:30:16 -0700
+
+linux-meta (3.8.0.10.24) raring; urgency=low
+
+  * linux ABI 3.8.0-10
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 04 Mar 2013 08:49:48 -0700
+
+linux-meta (3.8.0.9.23) raring; urgency=low
+
+  * linux ABI 3.8.0-9
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 28 Feb 2013 09:59:31 -0700
+
+linux-meta (3.8.0.8.22) raring; urgency=low
+
+  * linux ABI 3.8.0-8 
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 26 Feb 2013 13:27:13 -0700
+
+linux-meta (3.8.0.7.21) raring; urgency=low
+
+  * linux ABI 3.8.0-7
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 19 Feb 2013 08:51:50 -0700
+
+linux-meta (3.8.0.6.20) raring; urgency=low
 
   [ Stefan Bader ]
 
-  * Make linux-crashdump alternatively depend on EFI grub
+  * control.common: update linux-crashdump dependencies switching us
+    to Debian's kdump-tools.
+
+ -- Andy Whitcroft <apw@canonical.com>  Fri, 15 Feb 2013 11:55:30 +0000
+
+linux-meta (3.8.0.6.19) raring; urgency=low
+
+  * linux ABI 3.8.0-6
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Mon, 11 Feb 2013 08:56:41 -0700
+
+linux-meta (3.8.0.5.18) raring; urgency=low
+
+  * linux ABI 3.8.0-5
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 07 Feb 2013 10:52:23 -0700
+
+linux-meta (3.8.0.4.17) raring; urgency=low
+
+  * linux ABI 3.8.0-4
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Fri, 01 Feb 2013 07:29:18 -0800
+
+linux-meta (3.8.0.3.16) raring; urgency=low
+
+  * linux ABI 3.8.0-3
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Thu, 31 Jan 2013 06:43:13 -0800
+
+linux-meta (3.8.0.2.15) raring; urgency=low
+
+  * linux ABI 3.8.0-2
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Fri, 25 Jan 2013 12:10:04 -0800
+
+linux-meta (3.8.0.1.14) raring; urgency=low
+
+  * linux ABI 3.8.0-1
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Fri, 18 Jan 2013 08:20:30 -0700
+
+linux-meta (3.8.0.0.13) raring; urgency=low
+
+  * linux ABI 3.8.0-0
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Thu, 10 Jan 2013 07:37:28 -0700
+
+linux-meta (3.7.0.7.12) UNRELEASED; urgency=low
+
+  * Add direct binary version linkage to ensure correct version pairing.
+
+ -- Andy Whitcroft <apw@canonical.com>  Fri, 21 Dec 2012 17:27:12 +0000
+
+linux-meta (3.7.0.7.11) raring; urgency=low
+
+  * linux ABI 3.7.0-7
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Sat, 15 Dec 2012 07:10:50 -0700
+
+linux-meta (3.7.0.6.10) raring; urgency=low
+
+  * linux ABI 3.7.0-6
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 11 Dec 2012 06:07:17 -0700
+
+linux-meta (3.7.0.5.9) raring; urgency=low
+
+  * linux ABI 3.7.0-5
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 05 Dec 2012 09:08:10 -0700
+
+linux-meta (3.7.0.4.8) raring; urgency=low
+
+  * linux ABI 3.7.0-4
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 27 Nov 2012 07:15:23 -0700
+
+linux-meta (3.7.0.3.7) raring; urgency=low
+
+  * linux ABI 3.7.0-3
+  * Move metapackages to Section: kernel
+    -LP: #1074787
+  * Update RELEASE_NAME and Vcs-Git to Raring
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Tue, 20 Nov 2012 12:40:22 -0800
+
+linux-meta (3.7.0.2.6) raring; urgency=low
+
+  * linux ABI 3.7.0-2
+
+ -- Andy Whitcroft <apw@canonical.com>  Thu, 15 Nov 2012 16:15:15 +0000
+
+linux-meta (3.7.0.1.5) raring; urgency=low
+
+  * linux 3.7.0-1.6
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 14 Nov 2012 06:51:02 -0700
+
+linux-meta (3.7.0.0.4) raring; urgency=low
+
+  * renable linux-tools for armel and armhf and remove the binary
+    dependancies instead.
+
+ -- Andy Whitcroft <apw@canonical.com>  Fri, 09 Nov 2012 13:20:46 +0000
+
+linux-meta (3.7.0.0.3) raring; urgency=low
+
+  * disable linux-tools for armel and armhf until the binary package build
+    issues are resolved.
+
+ -- Andy Whitcroft <apw@canonical.com>  Fri, 09 Nov 2012 11:12:17 +0000
+
+linux-meta (3.7.0.0.2) raring; urgency=low
+
+  * UBUNTU: Disabled LBM meta packages
+  * UBUNTU: dropped highbank
+  * UBUNTU: Dropped power arch 
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Wed, 07 Nov 2012 08:56:27 -0700
+
+linux-meta (3.7.0.0.1) raring; urgency=low
+
+  * Reset versioning for Raring Ringtail.
+  * Drop linux-backports-modules meta packages.
+
+ -- Andy Whitcroft <apw@canonical.com>  Thu, 25 Oct 2012 12:02:30 +0100
+
+linux-meta (3.5.0.18.21) quantal-proposed; urgency=low
+
+  * Bump ABI
+
+ -- Luis Henriques <luis.henriques@canonical.com>  Thu, 18 Oct 2012 18:12:23 +0100
+
+linux-meta (3.5.0.17.20) quantal-proposed; urgency=low
+
+  * Added compat-wireless-3.6 meta packages
+    -LP: #1066123
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Wed, 10 Oct 2012 23:58:11 -0700
+
+linux-meta (3.5.0.17.19) quantal-proposed; urgency=low
+
+  * Make linux-crashdump alternatively depend on grub-efi-ia32 | grub-efi-amd64
     LP: #1064259
 
-  [ Leann Ogasawara ]
+ -- Stefan Bader <stefan.bader@canonical.com>  Tue, 09 Oct 2012 11:28:08 +0200
 
-  * UBUNTU: Add compat-wireless v3.6 meta package
-    LP: #1066123
-  * UBUNTU: Add compat-wireless v3.5 meta package
-    LP: #1066122
+linux-meta (3.5.0.17.18) quantal-proposed; urgency=low
 
-  [ Luis Henriques ]
+  * Add new meta-packages for linux-signed-* images.
 
-  * Bump ABI
+ -- Andy Whitcroft <apw@canonical.com>  Mon, 08 Oct 2012 13:11:40 +0100
 
- -- Luis Henriques <luis.henriques@canonical.com>  Wed, 17 Oct 2012 10:45:56 +0100
-
-linux-meta (3.2.0.32.35) precise-proposed; urgency=low
-
-  [ Luis Henriques ]
+linux-meta (3.5.0.17.17) quantal-proposed; urgency=low
 
   * Bump ABI
 
- -- Luis Henriques <luis.henriques@canonical.com>  Tue, 25 Sep 2012 10:34:58 +0100
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Wed, 03 Oct 2012 13:20:07 -0700
 
-linux-meta (3.2.0.31.34) precise-proposed; urgency=low
-
-  [ Leann Ogasawara ]
-
-  * Add compat-wireless v3.4 meta package
-    - LP: #1023566
-
- -- Luis Henriques <luis.henriques@canonical.com>  Fri, 07 Sep 2012 16:31:29 +0100
-
-linux-meta (3.2.0.31.33) precise-proposed; urgency=low
-
-  [ Luis Henriques ]
+linux-meta (3.5.0.16.16) quantal-proposed; urgency=low
 
   * Bump ABI
 
- -- Luis Henriques <luis.henriques@canonical.com>  Wed, 05 Sep 2012 10:44:55 +0100
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Thu, 27 Sep 2012 15:27:33 -0700
 
-linux-meta (3.2.0.30.32) precise-proposed; urgency=low
-
-  [ Luis Henriques ]
+linux-meta (3.5.0.15.15) quantal-proposed; urgency=low
 
   * Bump ABI
 
- -- Luis Henriques <luis.henriques@canonical.com>  Tue, 14 Aug 2012 11:26:27 +0100
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Mon, 17 Sep 2012 13:34:54 -0700
 
-linux-meta (3.2.0.29.31) precise-proposed; urgency=low
-
-  [ Luis Henriques ]
+linux-meta (3.5.0.14.14) quantal-proposed; urgency=low
 
   * Bump ABI
 
- -- Luis Henriques <luis.henriques@canonical.com>  Thu, 26 Jul 2012 16:52:11 +0100
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Thu, 06 Sep 2012 15:22:04 -0700
 
-linux-meta (3.2.0.28.30) precise-proposed; urgency=low
-
-  ## Note 3.2.0.28.30 was never uploaded and superceded by 3.2.0.29.31 ##
-
-  [ Luis Henriques ]
+linux-meta (3.5.0.13.13) quantal-proposed; urgency=low
 
   * Bump ABI
 
- -- Luis Henriques <luis.henriques@canonical.com>  Mon, 23 Jul 2012 12:16:20 +0100
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Mon, 27 Aug 2012 14:18:23 -0700
 
-linux-meta (3.2.0.27.29) precise-proposed; urgency=low
-
-  [ Luis Henriques ]
+linux-meta (3.5.0.12.12) quantal-proposed; urgency=low
 
   * Bump ABI
 
-  [ Tim Gardner ]
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Fri, 24 Aug 2012 10:54:25 -0700
 
-  * UBUNTU: No meta packages belong in the restricted component
-    - LP: #1016702
-  * UBUNTU: Move all header meta packages into Section: metapackages
-    - LP: #988447
-
- -- Luis Henriques <luis.henriques@canonical.com>  Mon, 02 Jul 2012 11:04:51 +0100
-
-linux-meta (3.2.0.26.28) precise-proposed; urgency=low
+linux-meta (3.5.0.11.11) quantal-proposed; urgency=low
 
   * Bump ABI
 
- -- Luis Henriques <luis.henriques@canonical.com>  Tue, 12 Jun 2012 12:07:00 +0100
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Thu, 16 Aug 2012 13:29:55 -0700
 
-linux-meta (3.2.0.25.27) precise-proposed; urgency=low
+linux-meta (3.5.0.10.10) quantal-proposed; urgency=low
 
-  [ Luis Henriques ]
+  * Bump ABI
 
-  * UBUNTU: Fix Vcs-Git in linux-precise-meta
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Mon, 13 Aug 2012 07:40:46 -0700
+
+linux-meta (3.5.0.9.9) quantal-proposed; urgency=low
+
+  * Bump ABI
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Wed, 08 Aug 2012 12:10:10 -0700
+
+linux-meta (3.5.0.8.8) quantal-proposed; urgency=low
+
+  * Bump ABI
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Fri, 03 Aug 2012 14:07:54 -0700
+
+linux-meta (3.5.0.7.7) quantal-proposed; urgency=low
+
+  * Bump ABI
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Mon, 30 Jul 2012 13:47:02 -0700
+
+linux-meta (3.5.0.6.6) quantal-proposed; urgency=low
+
+  * Bump ABI
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Mon, 23 Jul 2012 11:59:14 -0700
+
+linux-meta (3.5.0.5.5) quantal-proposed; urgency=low
+
+  * Bump ABI
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Mon, 16 Jul 2012 17:12:33 -0700
+
+linux-meta (3.5.0.4.4) quantal-proposed; urgency=low
+
+  * Bump ABI
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Mon, 09 Jul 2012 12:47:36 -0700
+
+linux-meta (3.5.0.3.3) quantal-proposed; urgency=low
+
+  * Bump ABI
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Mon, 02 Jul 2012 06:57:15 -0700
+
+linux-meta (3.5.0.2.2) quantal-proposed; urgency=low
+
+  * Bump ABI
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Tue, 26 Jun 2012 06:30:50 -0700
+
+linux-meta (3.5.0.1.1) quantal-proposed; urgency=low
+
+  * Bump meta package version for v3.5 based kernels
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Tue, 19 Jun 2012 06:20:23 -0700
+
+linux-meta (3.4.0.5.7) quantal; urgency=low
+
+  * Fix linux-virtual package dependencies.
+    -LP: #1009553
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 12 Jun 2012 13:16:55 -0600
+
+linux-meta (3.4.0.5.6) quantal-proposed; urgency=low
+
+  * Bump ABI
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Tue, 05 Jun 2012 10:08:56 -0700
+
+linux-meta (3.4.0.4.5) quantal; urgency=low
+
+  * Bump ABI
+  * Added highbank flavour
+  * All headers packages are in the metapackage section
+  * Put powerpc* binaries in the metapackages section
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Mon, 04 Jun 2012 07:31:42 -0700
+
+linux-meta (3.4.0.3.4) quantal; urgency=low
+
+  * Restore transitional packages
+    In order to facilitate a clean dist-upgrade, transitional
+    packages must be provided to upgrade from:
+    
+    generic-pae -> generic
+    virtual -> generic
+    server -> generic
+    
+    These transitional packages (with the possible exception of virtual)
+    can be dropped after the next LTS (14.04).
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Tue, 22 May 2012 15:19:12 -0600
+
+linux-meta (3.4.0.3.3) quantal; urgency=low
+
+  * Bump ABI
+  * Collapse generic-pae into generic
+  * Homogenize meta package references
+  * Drop non-smp powerpc
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Tue, 22 May 2012 06:09:44 -0700
+
+linux-meta (3.4.0.2.2) quantal; urgency=low
+
+  * Bump ABI
+  * Fix Vcs-Git in linux-quantal-meta
     - LP: #999726
 
-  [ Tim Gardner ]
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Thu, 17 May 2012 09:12:11 -0700
 
-  * UBUNTU: Added -hwe- and -current- meta packages
-  * Added Calxeda highbank flavour
-    - LP: #1000831
-  * Bump ABI
+linux-meta (3.4.0.1.1) quantal; urgency=low
 
- -- Luis Henriques <luis.henriques@canonical.com>  Wed, 23 May 2012 18:51:56 +0100
+  * Open Quantal Quetzal 12.10
+  * Temporarily disable LBM
+  * Remove non-PAE i386 references
+
+ -- Leann Ogasawara <leann.ogasawara@canonical.com>  Wed, 02 May 2012 06:21:45 -0700
 
 linux-meta (3.2.0.24.26) precise-proposed; urgency=low
 

@@ -4,13 +4,13 @@ Priority: optional
 Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
 Standards-Version: 3.6.1
 Build-Depends: dpkg (>= 1.13.19), debhelper (>= 5), gawk
-Vcs-Git: http://kernel.ubuntu.com/git-repos/ubuntu/ubuntu-precise-meta.git
+Vcs-Git: http://kernel.ubuntu.com/git-repos/ubuntu/ubuntu-RELEASE_NAME-meta.git
 
 Package: linux
-Architecture: i386 amd64 
+Architecture: i386 amd64 armhf
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, linux-image (= ${binary:Version})
+Depends: ${misc:Depends}, linux-${generic-depends}
 Description: Generic complete Linux kernel.
  This package will always depend on the latest generic complete Linux kernel
  available.
@@ -25,18 +25,18 @@ Description: Linux kernel source with Ubuntu patches
  available. The Ubuntu patches have been applied.
 
 Package: linux-image
-Architecture: i386 amd64 
+Architecture: i386 amd64 armhf
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, linux-image-${generic-depends} (= ${binary:Version})
+Depends: ${misc:Depends}, linux-image-${generic-depends}
 Description: Generic Linux kernel image.
  This package will always depend on the latest generic Linux kernel image
- available.
+ and headers.
 
 Package: linux-crashdump
 Architecture: i386 amd64
 Section: devel
-Depends: ${misc:Depends}, kexec-tools, makedumpfile, grub-pc (>= 1.96+20090611-1ubuntu2) | grub-efi-ia32 | grub-efi-amd64 | grub (>= 0.97-29ubuntu24)
+Depends: ${misc:Depends}, kdump-tools, grub-pc (>= 1.96+20090611-1ubuntu2) | grub-efi-ia32 | grub-efi-amd64 | grub (>= 0.97-29ubuntu24)
 Recommends: apport
 Suggests: crash
 Description: Linux kernel crashdump setup for the latest generic kernel
@@ -48,55 +48,9 @@ Description: Linux kernel crashdump setup for the latest generic kernel
  vmcore on crashes.
 
 Package: linux-tools
-Architecture: i386 amd64 armel armhf
+Architecture: i386 amd64 armhf
 Section: kernel
-Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}
-Description: Linux kernel versioned Tools
- This package will always depend on the latest Linux kernel versioned tools 
- available. The Ubuntu patches have been applied.
-
-#
-# This comment applies to the following 4 meta packages.
-#
-# Point to a 12.04 kernel until such time as 12.10 is released. Then update
-# to point to linux-image-generic-lts-backport-quantal. The -hwe- package
-# is not updated until just before a point release. However, the -current-
-# package always tracks the most recent release. In that way, -hwe- will
-# sometimes lag for a few months before being updated to match -current-.
-#
-Package: linux-image-hwe-generic
-Architecture: i386 amd64 
-Section: kernel
-Priority: optional
-Depends: ${misc:Depends}, linux-image-generic-lts-quantal
-Description: Depends on the generic hardware enablement kernel image and headers.
- This package will always depend on the generic hardware enablement kernel
- and headers.
-
-Package: linux-hwe-generic
-Architecture: i386 amd64 
-Section: kernel
-Priority: optional
-Depends: ${misc:Depends}, linux-image-hwe-generic, linux-headers-generic-lts-quantal
-Description: Depends on the generic hardware enablement kernel image and headers.
- This package will always depend on the generic hardware enablement kernel
- and headers.
-
-Package: linux-image-current-generic
-Architecture: i386 amd64 
-Section: kernel
-Priority: optional
-Depends: ${misc:Depends}, linux-image-generic-lts-raring
-Description: Depends on the most recently released generic kernel image and headers.
- This package will always depend on the latest released generic kernel
- and headers, up to 14.04 inclusive.
-
-Package: linux-current-generic
-Architecture: i386 amd64 
-Section: kernel
-Priority: optional
-Depends: ${misc:Depends}, linux-image-generic-lts-raring, linux-headers-generic-lts-raring
-Description: Depends on the most recently released generic kernel image and headers.
- This package will always depend on the latest released generic kernel
- and headers, up to 14.04 inclusive.
+Depends: ${misc:Depends}, linux-tools-${generic-depends}
+Description: Generic Linux kernel tools.
+ This package will always depend on the latest generic Linux kernel tools.
 

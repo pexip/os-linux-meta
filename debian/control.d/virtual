@@ -2,43 +2,42 @@ Package: linux-headers-virtual
 Architecture: i386 amd64
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-virtual
-Description: Linux kernel headers for virtual machines
- This package will always depend on the latest kernel headers available
- for virtual machines.
+Depends: ${misc:Depends}, linux-headers-generic (= ${binary:Version})
+Description: Transitional package.
+ This package will always depend on linux-headers-generic.
 
 Package: linux-image-virtual
 Architecture: i386 amd64
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-virtual, linux-firmware
-Description: Linux kernel image for virtual machines
- This package will always depend on the latest kernel image available
- for virtual machines. Install linux-image-extra-virtual to get all
- available kernel modules.
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-generic
+Description: This package will always depend on the latest minimal generic kernel image.
+ This package will always depend on the latest minimal generic kernel image
+ used for virtual instances.
+
+Package: linux-tools-virtual
+Architecture: i386 amd64
+Section: kernel
+Priority: optional
+Provides: linux-tools
+Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}-generic
+Description: This package will always depend on the latest minimal generic kernel tools.
+ This package will always depend on the latest minimal generic kernel tools
+ used for virtual instances.
 
 Package: linux-virtual
 Architecture: i386 amd64
 Section: kernel
 Priority: optional
 Depends: ${misc:Depends}, linux-image-virtual (= ${binary:Version}), linux-headers-virtual (= ${binary:Version})
-Description: Complete Linux kernel for virtual machines
- This package will always depend on the latest complete Linux kernel available
- for virtual machines. Install linux-image-extra-virtual to get all
- available kernel modules.
+Description: Minimal Generic Linux kernel and headers
+ This package will always depend on linux-image-virtual and
+ linux-headers-virtual.
 
 Package: linux-image-extra-virtual
 Architecture: i386 amd64
 Section: kernel
 Priority: optional
-Depends: ${misc:Depends}, linux-image-virtual (= ${binary:Version}), linux-image-extra-${kernel-abi-version}-virtual
-Description: Linux kernel extra modules for virtual machines
- This package will always depend on the latest kernel extra modules available
- for virtual machines.
-
-Package: linux-backports-modules-hv-RELEASE_NAME-virtual
-Architecture: amd64 i386
-Depends: ${misc:Depends}, linux-backports-modules-hv-${kernel-abi-version}-virtual
-Description: Backported Hyper-V hypervisor interfaces
- This empty package allows people to keep their Hyper-V updated drivers
- up-to-date when upgrading their Linux kernel.
+Depends: ${misc:Depends}, linux-image-generic (= ${binary:Version})
+Description: Transitional package.
+ This package will always depend on linux-image-generic.
